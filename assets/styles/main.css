@@ -1,22 +1,12 @@
-/* Main styles will go here */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.subscribe-button {
-  background: #ff6600;
-  padding: 10px 20px;
+.subscribe-btn {
+  background-color: #3498db;
   color: white;
+  padding: 10px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
-.subscribe-button:hover {
-  background: #e65c00;
+
+.subscribe-btn:hover {
+  background-color: #2980b9;
 }
-/* Quick fix: Adjust header margin */
-header {
-  margin-top: 10px;
-}
-"Footer widget styles - part 1" 
-"Footer widget styles - part 2" 
