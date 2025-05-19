@@ -3,3 +3,14 @@ body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
+
+.subscribe-button {
+  background: #ff6600;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.subscribe-button:hover {
+  background: #e65c00;
+}
