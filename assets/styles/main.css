@@ -14,3 +14,7 @@ body.dark-mode {
 .subscribe-button:hover {
   background: #e65c00;
 }
+/* Quick fix: Adjust header margin */
+header {
+  margin-top: 10px;
+}
