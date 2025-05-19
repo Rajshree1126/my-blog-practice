@@ -1,1 +1,5 @@
 /* Main styles will go here */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
