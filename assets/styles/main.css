@@ -1,9 +1,13 @@
-body.dark-mode {
+/* Dark theme styles */
+body {
   background-color: #121212;
-  color: #ffffff;
+  color: #f1f1f1;
 }
 
-.dark-mode .subscribe-btn {
-  background-color: #555;
-  color: #fff;
+/* Subscribe button styles */
+.subscribe-btn {
+  background-color: #ff4081;
+  padding: 10px 20px;
+  color: white;
+  border: none;
 }
