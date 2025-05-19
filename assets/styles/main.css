@@ -10,3 +10,6 @@
 .subscribe-btn:hover {
   background-color: #2980b9;
 }
+header {
+  margin-bottom: 20px;
+}
