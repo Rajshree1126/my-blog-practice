@@ -1,5 +1,6 @@
 {
   "name": "vulnerable-example",
+  "minimist": "0.0.8",
   "version": "1.0.4",
   "dependencies": {
     "lodash": "4.17.21"
