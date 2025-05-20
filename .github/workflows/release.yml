@@ -9,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -17,10 +17,13 @@ jobs:
         with:
           node-version: 16
 
-      - name: GitHub Tag Action (Auto Tag)
-        uses: anothrNick/github-tag-action@v1.36.0  # ✅ Use this known working version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BUMP: patch
-          RELEASE_BRANCHES: main
-          TAG_PREFIX: "v"
+      - name: Get last tag
+        id: get_tag
+        run: |
+          echo "TAG=$(git describe --tags --abbrev=0 || echo 'v0.0.0')" >> $GITHUB_ENV
+
+      - name: Bump version and create tag
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_bump: patch
