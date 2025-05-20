@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       - name: GitHub Tag Action (Auto Tag)
-        uses: anothrNick/github-tag-action@v1.38.0
+        uses: anothrNick/github-tag-action@v1.36.0  # ✅ Use this known working version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
