@@ -3,6 +3,6 @@
   "version": "1.0.4",
   "dependencies": {
     "lodash": "4.17.21",
-    "minimist": "0.0.8"
+    "minimist": "1.2.8"
   }
 }
